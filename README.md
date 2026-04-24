@@ -29,3 +29,13 @@ Option 3 (Node, si dispo) :
 - `public/app.js` → objet `content` (textes, exemples, quiz)
 - `public/styles.css` → thème / styles
 - `public/index.html` → structure des sections
+
+## Déployer sur Netlify (fix 404)
+
+Si tu vois une page Netlify **“Page not found (404)”**, c’est presque toujours parce que Netlify ne publie pas le bon dossier.
+
+Ce projet met le site dans `public/`, donc :
+
+- **Publish directory** doit être `public`
+
+Le fichier `netlify.toml` le force automatiquement à chaque déploiement.
